@@ -1,0 +1,17 @@
+.sidebar{
+    flex:1;
+    text-align: left;
+    height: calc(100vh - 50px);
+    background-color:rgb(227, 227, 233);
+    position: sticky;
+    top: 50px;
+}
+.sidebarWrapper{
+    padding:20px;
+    color: #555;
+}
+.Item:hover{
+    background-color:rgb(204, 204, 228);
+}
+
+

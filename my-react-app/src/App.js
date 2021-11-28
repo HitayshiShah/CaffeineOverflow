@@ -1,24 +1,26 @@
 import logo from './logo.svg';
+import Topbar from "./components/topbar/Topbar";
+import Chart from "./components/chart/Chart";
 import './App.css';
+import Sidebar from './components/sidebar/Sidebar';
+import "./application.css";
+import {BrowseRouter as Router, Switch, Route} from "react-router-dom";
+import Employees from "./Pages/Employees/Employees";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Topbar/>
+      <div className="container">
+        <Sidebar/>
+         <Chart/> {/*change this to Employees to see the table */}
+       
+      </div>
+        
+      
     </div>
+      
+    
   );
 }
 
