@@ -1,0 +1,10 @@
+.employees {
+    margin: 20px;
+    padding: 20px;
+    flex: 4;
+}
+.chartTitle {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
